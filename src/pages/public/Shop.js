@@ -27,7 +27,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
 
 const fetchData = () => {
   return axios
-    .get(`https://raihanaltyn.herokuapp.com/items`)
+    .get(`http://localhost:3004/items`)
     .then((response) => response.data);
 };
 
@@ -49,7 +49,7 @@ const Shop = () => {
 
 const handleComplete = async(e, id, name, description, price, composition, url, urlOne, urlTwo, urlThree, urlFour, isLiked) => {
   e.preventDefault()
-    await axios.put(`https://raihanaltyn.herokuapp.com/items/${id}`, {
+    await axios.put(`http://localhost:3004/items/${id}`, {
       name,
       description,
       price,
@@ -68,7 +68,7 @@ const handleComplete = async(e, id, name, description, price, composition, url, 
 
 const handleNoneComplete = async(e, id, name, description, price, composition, url, urlOne, urlTwo, urlThree, urlFour, isLiked) => {
   e.preventDefault()
-  await axios.put(`https://raihanaltyn.herokuapp.com/items/${id}`, {
+  await axios.put(`http://localhost:3004/items/${id}`, {
     name,
     description,
     price,
