@@ -12,7 +12,7 @@ import Feedback from "./feedback/Feedback";
 
 const fetchData = () => {
   return axios
-    .get(`http://localhost:3004/items`)
+    .get(`https://raihanapp.herokuapp.com/api/items`)
     .then((response) => response.data);
 };
 

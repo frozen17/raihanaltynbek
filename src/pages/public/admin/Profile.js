@@ -40,7 +40,7 @@ const Profile = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:3004/users/${user.id}`, {
+      const res = await axios.put(`https://raihanapp.herokuapp.com/api/users/${user.id}`, {
         email,
         password,
         login,

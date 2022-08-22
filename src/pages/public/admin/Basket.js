@@ -12,7 +12,7 @@ import IconButton from '@mui/material/IconButton';
 
 const fetchData = () => {
     return axios
-      .get(`http://localhost:3004/items`)
+      .get(`https://raihanapp.herokuapp.com/api/items`)
       .then((response) => response.data);
   };
 
@@ -27,7 +27,7 @@ const Basket = (props) => {
 
 const handleNoneComplete = async(e, id, name, description, price, composition, url, urlOne, urlTwo, urlThree, urlFour, isLiked) => {
   e.preventDefault()
-  await axios.put(`http://localhost:3004/items/${id}`, {
+  await axios.put(`https://raihanapp.herokuapp.com/api/items/${id}`, {
     name,
     description,
     price,

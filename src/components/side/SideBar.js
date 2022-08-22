@@ -35,7 +35,7 @@ const SideBar = () => {
 const newLetter = async(e) => {
   e.preventDefault()
   try{
-    const res = await axios.post('http://localhost:3004/newletter', {
+    const res = await axios.post('https://raihanapp.herokuapp.com/api/newletter', {
       userEmail: email,
       userGender: gender
     })

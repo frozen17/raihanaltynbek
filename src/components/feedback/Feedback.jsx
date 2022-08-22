@@ -17,7 +17,7 @@ const Feedback = () => {
     e.preventDefault();
     try {
       const res = await axios
-        .post("http://localhost:3004/response", {
+        .post("https://raihanapp.herokuapp.com/api/response", {
           userName: name,
           userEmail: email,
           userText: text,

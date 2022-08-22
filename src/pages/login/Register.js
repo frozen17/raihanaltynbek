@@ -48,7 +48,7 @@ const Register = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("http://localhost:3004/register/", {
+      const res = await axios.post("https://raihanapp.herokuapp.com/api/register/", {
         email,
         password,
         login,
