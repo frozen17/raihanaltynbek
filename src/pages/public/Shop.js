@@ -287,8 +287,7 @@ const handleRemoveColor = async(e, id, name, description, price, composition, ur
           </Card>
         ))}
       </div>
-      
-      <script src="//code.jivo.ru/widget/LCca5nGWOu" async></script>
+    
     </div>
   );
 };
